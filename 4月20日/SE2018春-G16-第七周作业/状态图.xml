@@ -1,0 +1,98 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<XMI xmi.version = "1.1" xmlns:UML="href://org.omg/UML/1.3" timestamp = "Thu Apr 19 22:54:41 2018">
+<XMI.header>
+  <XMI.documentation>
+    <XMI.owner></XMI.owner>
+    <XMI.contact></XMI.contact>
+    <XMI.exporter>StarUML.XMI-Addin</XMI.exporter>
+    <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    <XMI.notice></XMI.notice>
+  </XMI.documentation>
+  <XMI.metamodel xmi.name = "UML" xmi.version = "1.3"/>
+ </XMI.header>
+<XMI.content>
+<UML:Model xmi.id="UMLProject.1">
+  <UML:Namespace.ownedElement>
+    <UML:Model xmi.id="UMLModel.2" name="Use Case Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.41" name="useCaseModel" extendedElement="UMLModel.2"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.3" name="Analysis Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.42" name="analysisModel" extendedElement="UMLModel.3"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.4" name="Design Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.43" name="designModel" extendedElement="UMLModel.4"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.5" name="Implementation Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.44" name="implementationModel" extendedElement="UMLModel.5"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.6" name="Deployment Model" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Stereotype xmi.id="X.45" name="deploymentModel" extendedElement="UMLModel.6"/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Model xmi.id="UMLModel.7" name="Model1" visibility="public" isSpecification="false" namespace="UMLProject.1" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:StateMachine xmi.id="UMLStateMachine.8" name="StateMachine1" visibility="public" isSpecification="false" context="UMLModel.7">
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="UMLCompositeState.9" name="TOP" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" isConcurrent="false">
+              <UML:CompositeState.subvertex>
+                <UML:SimpleState xmi.id="UMLCompositeState.10" name="显示网页首页" visibility="public" isSpecification="false" container="UMLCompositeState.9" outgoing="UMLTransition.26 UMLTransition.27 UMLTransition.28 UMLTransition.31 UMLTransition.32" incoming="UMLTransition.23 UMLTransition.25">
+                  <UML:State.doActivity>
+                    <UML:UninterpretedAction xmi.id="UMLUninterpretedAction.11" name="连接到网页" visibility="public" isSpecification="false" isAsynchronous="false"/>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:Pseudostate xmi.id="UMLPseudostate.12" name="Initial1" visibility="public" isSpecification="false" container="UMLCompositeState.9" outgoing="UMLTransition.23 UMLTransition.24 UMLTransition.25" incoming="UMLTransition.24 UMLTransition.26 UMLTransition.27 UMLTransition.31 UMLTransition.32" kind="initial"/>
+                <UML:FinalState xmi.id="UMLFinalState.13" name="FinalState1" visibility="public" isSpecification="false" container="UMLCompositeState.9" incoming="UMLTransition.40"/>
+                <UML:FinalState xmi.id="UMLFinalState.14" name="FinalState2" visibility="public" isSpecification="false" container="UMLCompositeState.9"/>
+                <UML:FinalState xmi.id="UMLFinalState.15" name="FinalState3" visibility="public" isSpecification="false" container="UMLCompositeState.9"/>
+                <UML:Pseudostate xmi.id="UMLPseudostate.16" name="ShallowHistory1" visibility="public" isSpecification="false" container="UMLCompositeState.9" kind="shallowHistory"/>
+                <UML:SimpleState xmi.id="UMLCompositeState.17" name="显示网页板块信息" visibility="public" isSpecification="false" container="UMLCompositeState.9" outgoing="UMLTransition.29" incoming="UMLTransition.28"/>
+                <UML:SimpleState xmi.id="UMLCompositeState.18" name="显示帖子信息" visibility="public" isSpecification="false" container="UMLCompositeState.9" outgoing="UMLTransition.30 UMLTransition.36 UMLTransition.40" incoming="UMLTransition.29 UMLTransition.33 UMLTransition.35 UMLTransition.37 UMLTransition.39"/>
+                <UML:SimpleState xmi.id="UMLCompositeState.19" name="发帖界面" visibility="public" isSpecification="false" container="UMLCompositeState.9" outgoing="UMLTransition.33 UMLTransition.34 UMLTransition.35" incoming="UMLTransition.30 UMLTransition.34">
+                  <UML:State.doActivity>
+                    <UML:UninterpretedAction xmi.id="UMLUninterpretedAction.20" name="编辑帖子内容" visibility="public" isSpecification="false" isAsynchronous="false"/>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="UMLCompositeState.21" name="回复界面" visibility="public" isSpecification="false" container="UMLCompositeState.9" outgoing="UMLTransition.37 UMLTransition.38 UMLTransition.39" incoming="UMLTransition.36 UMLTransition.38">
+                  <UML:State.doActivity>
+                    <UML:UninterpretedAction xmi.id="UMLUninterpretedAction.22" name="编辑内容，上传附件" visibility="public" isSpecification="false" isAsynchronous="false"/>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id="UMLTransition.23" name="" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLPseudostate.12" target="UMLCompositeState.10"/>
+            <UML:Transition xmi.id="UMLTransition.24" name="" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLPseudostate.12" target="UMLPseudostate.12"/>
+            <UML:Transition xmi.id="UMLTransition.25" name="打开网址，登陆" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLPseudostate.12" target="UMLCompositeState.10"/>
+            <UML:Transition xmi.id="UMLTransition.26" name="" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.10" target="UMLPseudostate.12"/>
+            <UML:Transition xmi.id="UMLTransition.27" name="网络繁忙，连接超时" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.10" target="UMLPseudostate.12"/>
+            <UML:Transition xmi.id="UMLTransition.28" name="浏览板块" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.10" target="UMLCompositeState.17"/>
+            <UML:Transition xmi.id="UMLTransition.29" name="浏览帖子" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.17" target="UMLCompositeState.18"/>
+            <UML:Transition xmi.id="UMLTransition.30" name="发帖" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.18" target="UMLCompositeState.19"/>
+            <UML:Transition xmi.id="UMLTransition.31" name="" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.10" target="UMLPseudostate.12"/>
+            <UML:Transition xmi.id="UMLTransition.32" name="账号密码错误，登陆失败" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.10" target="UMLPseudostate.12"/>
+            <UML:Transition xmi.id="UMLTransition.33" name="用户突然取消发帖" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.19" target="UMLCompositeState.18"/>
+            <UML:Transition xmi.id="UMLTransition.34" name="帖子编写失败，比如内容不符合要求" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.19" target="UMLCompositeState.19"/>
+            <UML:Transition xmi.id="UMLTransition.35" name="发帖成功" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.19" target="UMLCompositeState.18"/>
+            <UML:Transition xmi.id="UMLTransition.36" name="回复帖子" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.18" target="UMLCompositeState.21"/>
+            <UML:Transition xmi.id="UMLTransition.37" name="回复成功" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.21" target="UMLCompositeState.18"/>
+            <UML:Transition xmi.id="UMLTransition.38" name="回复失败，回复内容不符合要求" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.21" target="UMLCompositeState.21"/>
+            <UML:Transition xmi.id="UMLTransition.39" name="用户突然取消回复" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.21" target="UMLCompositeState.18"/>
+            <UML:Transition xmi.id="UMLTransition.40" name="退出网页" visibility="public" isSpecification="false" stateMachine="UMLStateMachine.8" source="UMLCompositeState.18" target="UMLFinalState.13"/>
+          </UML:StateMachine.transitions>
+        </UML:StateMachine>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+  </UML:Namespace.ownedElement>
+</UML:Model>
+</XMI.content>
+</XMI>
