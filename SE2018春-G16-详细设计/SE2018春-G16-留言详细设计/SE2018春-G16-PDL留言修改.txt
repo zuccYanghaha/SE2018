@@ -1,0 +1,27 @@
+Procedure 留言修改（int RID）  //输入参数留言标识RID
+begin
+	declare content   as 字符串
+	declare ReplyLastTime as datatime
+	点击修改按钮
+	连接数据库
+	显示回复修改页面
+	用户输入回复内容
+	if（点击确定按钮）
+		do while（T）
+			回复内容赋值给content
+			if（回复内容为空）
+				print（”回复内容为空“）
+			else if（回复内容过长）
+				print（”回复内容过长“）
+			else
+				获得系统当前时间，赋值给变量ReplyLastTime
+				try：
+					在数据库中执行update语句，将留言标识为RID的留言，更新内容和最后修改时间为content，ReplyLastTime
+					提交事务
+				except:
+					发生错误回滚
+	elseif（点击取消按钮）
+
+	关闭数据库
+	return 调用模块
+enddo

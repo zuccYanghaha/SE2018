@@ -1,0 +1,44 @@
+Procedure 创建模块（String UID） //用户学号 
+begin
+	declare Name   as String
+	declare Intro as String
+	declare SCreateTime as datetime
+	declare ClassType as String
+	declare flag=0 as int
+	点击增加按钮
+	连接数据库
+	do while（T）
+		显示增加板块页面
+		管理员输入板块名字
+		管理员输入板块介绍
+		管理员输入板块类型
+		if（点击确定按钮）
+			if（板块名字为空）
+				print（“板块名字不能为空”）
+			else if（板块名字过长）
+				print（“板块名字超越了长度”）
+			else if（板块介绍为空）
+				print（“板块介绍不能为空”）
+			else if（板块介绍过长）
+				print（“板块介绍超越了长度”）
+			else if（板块类型为空）
+				print（“板块类型为空”）
+			else 
+				板块名字赋值给Name  
+				板块介绍赋值给Intro
+				板块类型赋值给ClassType
+				获得系统当前时间，赋值给变量SCreateTime
+				try：
+					在数据库中执行insert语句，将SID，SName，Intro，SCreateTime，UID，ClassType数据加入数据库，形成一条数据
+					提交事务
+					flag=1
+				except:
+					发生错误回滚
+			if（flag==1）
+				break
+			
+		elseif（点击取消按钮）
+	关闭数据库
+	return 调用模块
+enddo
+
