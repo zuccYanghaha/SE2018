@@ -1,9 +1,0 @@
-Procedure 用户搜索 IS
-begin
-	显示信息界面
-	选择搜索用户
-	输入用户信息
-	搜索数据库
-	显示搜索返回结果
-	return 调用模块
-enddo
