@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"> </head>
+
+<body>
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="margin-left:0px">首页</a>
+      <button data-toggle="collapse" data-target="#navbarSupportedContent" style="margin-left:0px" class="navbar-toggler navbar-toggler-right" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">学习生活</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">课余生活</a>
+          </li>
+        </ul>
+        <form class="form-inline m-0">
+          <input class="form-control mr-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary" type="submit" style="margin-right: 100px">Search</button>
+          <button class="btn btn-dark" type="submit" style="margin-left: 100px">个人简介</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="center">
+    <div class="column" style="width: 100%;">
+      <div class="row" style="width: 100%; justify-content: space-between; align-items: center;">
+        <div class="row" style="align-items: baseline; justify-content: flex-start; color: grey; font-size: 0.75rem; margin-bottom: 1rem;">
+          <a href="/" style="color: grey; font-size: 1rem; margin-right: 0.5rem;">首页</a>
+          <i class="fa fa-chevron-right"></i>
+          <a href="/boardlist" style="color: grey; font-size: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;">学习生活</a>
+          <i class="fa fa-chevron-right"></i>
+          <a href="/list/100" style="color: grey; font-size: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;">软件工程基础</a>
+          <i class="fa fa-chevron-right"></i>
+          <a href="/topic/4769615" style="color: grey; font-size: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;">
+            <div style="overflow: hidden; text-overflow: ellipsis; max-width: 15rem; white-space: nowrap;">发表帖子</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form class="postTopic">
+    <div class="createTopicTitle" style="    display: flex;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    background-color: #fff;
+    align-items: center;">
+      <div class="createTopicListName" style="border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #e9e9e9;
+    box-sizing: border-box;">主题标题</div>
+      <div>
+        <input value="" placeholder="请输入新主题的标题" name="title" style="    display: flex;
+    width: 740px;
+    border: 0;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    color: #505050;
+    outline: none;
+    padding-left: 1rem;"> </div>
+    </div>
+    <div>
+      <div class="createTopicContent">
+        <div class="createTopicListName" style="float: left">主题内容</div>
+        <a href="#" class="post-topic-button text-dark border border-dark text-center" style="float: right; width:6rem">添加附件</a>
+        <input type="checkbox" name="vehicle" value="Bike" style="margin-left: 70rem"> 有附件 </div>
+      <div class="ubb-content">
+        <textarea spellcheck="false" style="height: 22rem;padding: 1rem;
+    display: flex; flex-direction: column; width: 100%" ></textarea>
+      </div>
+      <div class="row" style="justify-content: center;">
+        <button id="post-topic-button" name="posttopic" class="button blue w-50 border" style="background:#4f70ce; margin-top: 1.25rem; width: 6rem;
+height: 3rem; line-height: 0.8rem; color: white">发 帖</button>
+      </div>
+      <div class="footer" style="display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 15px;
+  width: 100%;
+  min-width: 1140px;
+  background:#000">
+        <div class="column" color="#fff" font="">
+          <div class="footerRow">
+            <a href="https://www.baidu.com/" style="color:#fff">百度</a>|
+            <a href="https://www.zhihu.com/" style="color:#fff">知乎</a>|
+            <a href="http://www.ctrip.com/" style="color:#fff">携程</a>|
+            <a href="https://www.taobao.com/" style="color:#fff">淘宝网</a>
+          </div>
+          <div class="footerRow" style="color:#fff">Copyright © 2018 SEG16</div>
+          <div class="footerRow" style="color:#fff">联系方式: Jason981218@163.com</div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+  </form>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"> </pingendo>
+</body>
+
+</html>

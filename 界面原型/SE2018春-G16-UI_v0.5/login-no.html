@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"> </head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="margin-left:0px">首页</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style="margin-left:0px">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" draggable="true">
+            <a class="nav-link" href="#">学习生活</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">课余生活</a>
+          </li>
+        </ul>
+        <form class="form-inline m-0">
+          <input class="form-control mr-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary" type="submit" style="margin-right: 100px">Search</button>
+          <button class="btn btn-dark" type="submit" style="margin-left: 100px">注册/登录</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <form class="main">
+			<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"> </div>
+        <div class="col-md-6">
+          <div class="card text-white p-5 border border-secondary">
+            <div class="card-body">
+              <h1 class="mb-4 border border-secondary text-secondary text-center">用户登录</h1>
+              <form action="" method="POST" style="opacity: 0.5;">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label class="text-dark">登陆学号</label>
+                  <input type="text" class="form-control" name="UID" placeholder="请输入学号"> </div>
+                <div class="form-group">
+                  <label class="text-dark">登陆密码</label>
+                  <input type="password" class="form-control" name="password" placeholder="请输入密码"> </div>
+                 <div style="color: #FF0000">{{msg}}</div>
+                <button type="submit" name="login" class="btn btn-secondary btn-block p-2 my-4">登 录</button>
+                <button type="submit" name="forget_password" class="btn btn-block p-2 btn-link text-dark ml-auto">忘记密码？</button>
+                <button type="submit" name="regist" class="btn btn-block p-2 btn-link text-dark ml-auto">注册账号</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+   <div class="footer" style="display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 15px;
+  width: 100%;
+  min-width: 1140px;
+  background:#000">
+    <div class="column" color="#fff" font="">
+      <div class="footerRow">
+        <a href="https://www.baidu.com/" style="color:#fff">百度</a>|
+        <a href="https://www.zhihu.com/" style="color:#fff">知乎</a>|
+        <a href="http://www.ctrip.com/" style="color:#fff">携程</a>|
+        <a href="https://www.taobao.com/" style="color:#fff">淘宝网</a>
+      </div>
+      <div class="footerRow" style="color:#fff">Copyright © 2018 SEG16</div>
+      <div class="footerRow" style="color:#fff">联系方式: Jason981218@163.com</div>
+    </div>
+  </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+      <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"> </pingendo>
+</body>
+
+</html>
